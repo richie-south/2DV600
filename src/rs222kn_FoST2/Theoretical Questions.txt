@@ -1,27 +1,31 @@
 1. What is the Java Virtual Machine? What is Bytecode?
-    -
+	- java virtual machine is the thing that enables a computer to run java programs 
+	- bytecode is the instruction set of the java virtual machine
 2. What is the Java Classpath?
-    -
+    - is a parameter in the java virtual machine of the java compiler that specifies the location of user defined classes and packages.
 3. How do you compile and run your java program without the help of an Integrated Development Environment (IDE) (e.g., an IDE like Eclipse)?
-    -
+    - you can use the java command prompt
 4. What is a JAR file?
-    -
+    - JAR = java archive, it is a package file format
 5. How do you declare the starting point of a Java application?
-    -
+    - by using main();
 6. What is a package? Why is important to declare classes inside packages?
-    -
+    - package is a namespace that organizes a set of related classes and interfaces
 7. What is an interface? Why is it important to not change them?
-    -
+    - interface is a group of related methods with empty bodies
+	- classes that use interfaces might brake if you change the interface
 8. Which visibility levels are available in Java? What is the default visibility for classes, methods, and fields?
-    -
+    - default is known as package-private. there ar also public, protected, package-private and private
 9. In the context of Java, what is an Exception? And what is an Error?
-    -
+    - Errors are abnormal and are often caused på rare errors not on code level and exceptions are when an error occurs within a method 
 10. What happened if your program terminates with an OutOfMemoryError, or NoClassDefFoundErroror NullPointerException?
-    -
+    - OutOfMemoryError occurs when the garbage collector couldn’t allocate more memory, 
+    - NoClassDefFoundErroror occurs when a class is not found att runtime
+    - NullPointerException occurs when you try to use a reference that points to no location in memory 
 11. How do you handle Exceptions in your program?
-    -
+    - try/catch were a exception will/might be thrown
 12. Why is it important to test your code/application/product, before you deliver it to your customer/boss/teacher?
-    -
+    - to see that the program will not crash under normal or abnormal use cases 
 13. What is JavaDoc? How do you write documentation with it?
-    -
+    - it is a documentation system developed på sun for java, it reads comments in the code and creates documentation based on the comments found
 
