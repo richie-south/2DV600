@@ -39,6 +39,10 @@ public class TreeWordSet implements WordSet{
     return new TreeSetIterator();
   }
 
+  /**
+   * Iterator for treeWordSet,
+   * uses Queue to to iterate over elements
+   * */
   private class TreeSetIterator implements Iterator<Word>{
     Queue<Node> queue;
     Iterator<Node> queueIterator;
@@ -49,6 +53,9 @@ public class TreeWordSet implements WordSet{
       queueIterator = queue.iterator();
     }
 
+    /**
+     * Adds all elements in treeWordSet to Queue
+     * */
     public void addToQueue(Node node) {
       if(node.left != null){
         addToQueue(node.left);
